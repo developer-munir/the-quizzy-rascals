@@ -50,12 +50,11 @@ const Navbar = () => {
             <li className="mr-5 font-serif">
               <Link to="statistics">Statistics</Link>
             </li>
-            <li className="mr-5">
+            <li className="mr-5 font-serif">
               <Link to="blog">Blog</Link>
             </li>
           </ul>
         </div>
-        
       </div>
     </div>
   );
