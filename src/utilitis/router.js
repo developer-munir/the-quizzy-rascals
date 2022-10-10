@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
     path: "/",
     element: <Layout></Layout>,
     errorElement: <Error></Error>,
-    // loader: loaderData,
+    loader: loaderData,
     children: [
       {
         path: "/",
