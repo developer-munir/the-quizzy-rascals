@@ -5,7 +5,7 @@ const Topic = ({ topic }) => {
   console.log(topic);
   const { name, logo } = topic;
   return (
-    <div className="card card-side bg-base-100 shadow-xl bg-slate-200 p-2">
+    <div className="card card-side shadow-xl bg-slate-200 p-2">
       <figure>
         <img src={logo} alt="images not found" className="rounded-xl" />
       </figure>
