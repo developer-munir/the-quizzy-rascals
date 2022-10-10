@@ -6,8 +6,9 @@ const Quiz = () => {
   const loadQuiz = useLoaderData();
   return (
     <div>
+      <h1 className="text-center text-2xl font-serif">React Quizes</h1>
       {loadQuiz?.data?.questions.map((quiz) => (
-        <QuizUi key={quiz.id} quiz={quiz}></QuizUi>
+        <QuizUi key={quiz?.id} quiz={quiz}></QuizUi>
       ))}
     </div>
   );

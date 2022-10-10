@@ -1,19 +1,30 @@
 import React from "react";
-
+import swal from 'sweetalert';
+import { Sparkles } from "heroicons-react";
 const QuizUi = ({ quiz }) => {
-  // console.log(quiz.options);
   const { question, correctAnswer, options } = quiz;
     const handleQuiz = (e) => {
         if (e === correctAnswer) {
-            alert('right');
+            swal("Good job!", "You are right!", "success");
         } else {
-            alert('wrong')
+          swal('Your are wrong!!');
       }
   };
+  const handleRightQuiz = () => {
+    swal("Click on the button to see the right answer.").then((value) => {
+      swal(`The correct answer is: ${correctAnswer}`);
+    });
+  }
   return (
     <div className="container mx-auto flex  justify-center">
       <div className="md:w-3/4 w-full md:p-5 mx-2 border my-2 rounded-xl p-2">
-        <h1 className="md:text-2xl text-lg font-serif">{question}</h1>
+        <div className="flex justify-between align-middle">
+          <h1 className="md:text-2xl text-lg font-serif">{question}</h1>
+          <p onClick={handleRightQuiz} className='cursor-pointer'>
+            <Sparkles></Sparkles>
+          </p>
+        </div>
+
         {options.map((option, index) => (
           <label key={index} className="flex align-middle p-3">
             <input
