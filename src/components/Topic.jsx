@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const Topic = ({ topic }) => {
   const { name, logo,id} = topic;
   return (
-    <div className="card card-side shadow-xl bg-slate-200 p-2">
+    <div
+      className="card card-side shadow-xl bg-slate-200 p-2"
+      data-aos="zoom-in"
+    >
       <figure>
         <img src={logo} alt="images not found" className="rounded-xl" />
       </figure>

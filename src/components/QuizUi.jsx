@@ -1,6 +1,6 @@
 import React from "react";
 import swal from 'sweetalert';
-import { EyeOffOutline, Sparkles } from "heroicons-react";
+import { EyeOffOutline } from "heroicons-react";
 const QuizUi = ({ quiz }) => {
   const { question, correctAnswer, options } = quiz;
     const handleQuiz = (e) => {
@@ -33,7 +33,7 @@ const QuizUi = ({ quiz }) => {
         {options.map((option, index) => (
           <label
             key={index}
-            className="flex align-middle p-3 text-xl hover:bg-red-100 rounded-md font-mono cursor-pointer"
+            className="flex align-middle p-3 text-xl hover:bg-red-200 rounded-md font-mono cursor-pointer"
           >
             <input
               type="radio"

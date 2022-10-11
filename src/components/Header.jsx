@@ -13,7 +13,10 @@ const Header = () => {
             church service accessible with real-time captioning.
           </p>
         </div>
-        <img src={img} className="w-full rounded-md" alt="" />
+        <img data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500" src={img} className="w-full rounded-md" alt="" />
       </div>
     );
 };
