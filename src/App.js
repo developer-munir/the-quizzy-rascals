@@ -4,7 +4,7 @@ import { router } from './utilitis/router';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-[#CAD5E2]">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

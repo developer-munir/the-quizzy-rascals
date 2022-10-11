@@ -19,16 +19,16 @@ const Carosel = () => {
           </div>
         </div>
         <div className="flex justify-center w-full py-2 gap-2">
-          <Link to="#item1" className="btn btn-xs">
+          <Link to="#item1" className="btn btn-xs bg-[#E6425E] border-none">
             1
           </Link>
-          <Link to="#item2" className="btn btn-xs">
+          <Link to="#item2" className="btn btn-xs bg-[#E6425E] border-none">
             2
           </Link>
-          <Link to="#item3" className="btn btn-xs">
+          <Link to="#item3" className="btn btn-xs bg-[#E6425E] border-none">
             3
           </Link>
-          <Link to="#item4" className="btn btn-xs">
+          <Link to="#item4" className="btn btn-xs bg-[#E6425E] border-none">
             4
           </Link>
         </div>

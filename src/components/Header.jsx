@@ -4,7 +4,7 @@ import Carosel from './Carosel';
 
 const Header = () => {
     return (
-        <div>
+        <div className='py-5'>
             <Carosel></Carosel>
         </div>
     );

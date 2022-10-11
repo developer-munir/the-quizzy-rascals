@@ -5,7 +5,7 @@ import Home from "../components/Home";
 import Layout from "../components/Layout";
 import Quiz from "../components/Quiz";
 import Statistics from "../components/Statistics";
-import { loaderData, loadQuiz } from "../loaders/loaders";
+import { loaderData } from "../loaders/loaders";
 
 export const router = createBrowserRouter([
   {
