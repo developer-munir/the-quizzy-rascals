@@ -1,6 +1,6 @@
 import React from "react";
 import swal from 'sweetalert';
-import { Sparkles } from "heroicons-react";
+import { EyeOffOutline, Sparkles } from "heroicons-react";
 const QuizUi = ({ quiz }) => {
   const { question, correctAnswer, options } = quiz;
     const handleQuiz = (e) => {
@@ -16,22 +16,24 @@ const QuizUi = ({ quiz }) => {
     });
   }
   return (
-    <div className="container mx-auto flex  justify-center text-[#E6425E]">
+    <div className="container mx-auto flex  justify-center">
       <div className="md:w-3/4 w-full md:p-5 mx-2 border my-2 rounded-xl p-2 shadow-lg border-[#E6425E]">
         <div className="flex justify-between align-middle">
-          <h1 className="md:text-2xl text-lg font-serif mb-2">{question}</h1>
+          <h1 className="md:text-2xl text-lg font-serif mb-2 text-[#E6425E]">
+            {question}
+          </h1>
           <p
             onClick={handleRightQuiz}
             className="cursor-pointer text-[#E6425E]"
           >
-            <Sparkles></Sparkles>
+            <EyeOffOutline></EyeOffOutline>
           </p>
         </div>
 
         {options.map((option, index) => (
           <label
             key={index}
-            className="flex align-middle p-3 text-xl hover:bg-red-100 rounded-md"
+            className="flex align-middle p-3 text-xl hover:bg-red-100 rounded-md font-mono cursor-pointer"
           >
             <input
               type="radio"
