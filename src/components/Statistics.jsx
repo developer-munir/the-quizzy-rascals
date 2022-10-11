@@ -1,14 +1,12 @@
-import React from 'react';
-import Rechart from './Rechart';
-
+import React from "react";
+import Rechart from "./Rechart";
 
 const Statistics = () => {
-    return (
-        <div>
-            
-            <Rechart></Rechart>
-        </div>
-    );
+  return (
+    <div>
+      <Rechart></Rechart>
+    </div>
+  );
 };
 
 export default Statistics;

@@ -6,7 +6,8 @@ import { quizTopicContext } from './Layout';
 const Rechart = () => {
     const quiz = useContext(quizTopicContext);
     return (
-      <div className="py-12 h-[650px] md:h-[400px] ">
+      <div className="py-12 px-2 h-[650px] md:h-[400px] ">
+        <h1 className="text-xl font-mono text-[#E6425E]">Quizes</h1>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={quiz.data}
@@ -29,6 +30,7 @@ const Rechart = () => {
             />
           </AreaChart>
         </ResponsiveContainer>
+        <h1 className="text-xl font-mono text-[#E6425E]">Topics</h1>
       </div>
     );
 };

@@ -7,11 +7,11 @@ const QuizUi = ({ quiz }) => {
         if (e === correctAnswer) {
             swal("Good job!", "You are right!", "success");
         } else {
-          swal('Your are wrong!!');
+          swal('Your are wrong!!!');
       }
   };
   const handleRightQuiz = () => {
-    swal("Click on the button to see the right answer.").then((value) => {
+    swal("Tap button to see the right answer!!!").then((value) => {
       swal(`The correct answer is: ${correctAnswer}`);
     });
   }

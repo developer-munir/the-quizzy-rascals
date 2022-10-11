@@ -11,7 +11,7 @@ function App() {
      AOS.refresh();
    }, []);
   return (
-    <div className="App bg-[#CAD5E2]">
+    <div className="App bg-[#CAD5E2] overflow-hidden">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
