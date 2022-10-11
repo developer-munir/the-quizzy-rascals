@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav>
-      <div className="navbar bg-[#CAD5E2] text-[#E6425E] md:px-5 border-b-2 border-[#E6425E]">
+      <div className="navbar text-[#CAD5E2] bg-[#E6425E] md:px-5">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,7 +25,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#CAD5E2] rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#E6425E] text-[#CAD5E2] rounded-box w-52"
             >
               <li className="mr-5 font-serif">
                 <Link to="/">Home</Link>

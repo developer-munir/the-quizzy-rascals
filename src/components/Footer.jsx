@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-5 font-serif text-[#E6425E] border-t-2 border-[#E6425E] mt-10">
+    <footer className="footer footer-center p-5 font-serif text-[#CAD5E2] bg-[#E6425E] mt-10">
       <div>
         <svg
           width="50"
@@ -18,8 +18,9 @@ const Footer = () => {
         </svg>
         <p className="font-bold">
           ACME Industries Ltd. <br />
-                  Providing reliable tech since 1992<br />
-                  by developer-munir
+          Providing reliable tech since 1992
+          <br />
+          by developer-munir
         </p>
         <p>Copyright © 2022 - All right reserved</p>
       </div>

@@ -1,9 +1,12 @@
 import React from 'react';
+import Rechart from './Rechart';
+
 
 const Statistics = () => {
     return (
         <div>
-            <h1>Statistics</h1>
+            
+            <Rechart></Rechart>
         </div>
     );
 };
