@@ -8,7 +8,7 @@ const Blog = () => {
         </span>
         <div className="w-3/4 mx-auto my-5">
           <h5 className="font-serif text-[#E6425E]">
-            Qs: what is the perpus of react router?
+            Qs 1: what is the perpus of react router?
           </h5>
           <p className="font-mono">
             React Router is a standard library for routing in React. It enables
@@ -20,7 +20,7 @@ const Blog = () => {
         </div>
         <div className="w-3/4 mx-auto my-5">
           <h5 className="font-serif text-[#E6425E]">
-            Qs: How does context api work?
+            Qs 2: How does context api work?
           </h5>
           <p className="font-mono">
             The way Context API work is that we create a context using
@@ -31,7 +31,8 @@ const Blog = () => {
           </p>
         </div>
         <div className="w-3/4 mx-auto my-5">
-          <h5 className="font-serif text-[#E6425E]">Qs: what is usehref ?</h5>
+                <h5 className="font-serif text-[#E6425E]">
+                    Qs 3: what is usehref ?</h5>
           <p className="font-mono">
             The useRef hook in react is used to create a reference to an HTML
             element. Most widely used scenario is when we have form elements and
