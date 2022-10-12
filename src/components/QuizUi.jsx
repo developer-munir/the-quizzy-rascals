@@ -11,7 +11,7 @@ const QuizUi = ({
   const { question, correctAnswer, options } = quiz;
   const handleQuiz = (e) => {
     if (e === correctAnswer) {
-      swal("Good job!", "You are right!", "success");
+      swal("Good job!", "You are right!!!", "success");
       setRightCount(rightCount + 1);
     } else {
       swal("Your are wrong!!!");
