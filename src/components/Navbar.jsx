@@ -27,13 +27,13 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#E6425E] text-[#CAD5E2] rounded-box w-52"
             >
-              <li className="mr-5 hover:bg-[#CAD5E2] hover:text-black rounded-lg font-serif">
+              <li className="mr-5 hover:bg-red-200 hover:text-black rounded-lg font-serif">
                 <Link to="/">Home</Link>
               </li>
-              <li className="mr-5 hover:bg-[#CAD5E2] hover:text-black rounded-lg font-serif">
+              <li className="mr-5 hover:bg-red-200 hover:text-black rounded-lg font-serif">
                 <Link to="statistics">Statistics</Link>
               </li>
-              <li className="mr-5 hover:bg-[#CAD5E2] hover:text-black rounded-lg font-serif">
+              <li className="mr-5 hover:bg-red-200 hover:text-black rounded-lg font-serif">
                 <Link to="blog">Blog</Link>
               </li>
             </ul>
@@ -42,13 +42,13 @@ const Navbar = () => {
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
-            <li className="mr-5 hover:bg-[#CAD5E2] hover:text-black rounded-lg font-serif">
+            <li className="mr-5 hover:bg-red-200 hover:text-black rounded-lg font-serif">
               <Link to="/">Home</Link>
             </li>
-            <li className="mr-5 hover:bg-[#CAD5E2] hover:text-black rounded-lg font-serif">
+            <li className="mr-5 hover:bg-red-200 hover:text-black rounded-lg font-serif">
               <Link to="statistics">Statistics</Link>
             </li>
-            <li className="mr-5 hover:bg-[#CAD5E2] hover:text-black rounded-lg font-serif">
+            <li className="mr-5 hover:bg-red-200 hover:text-black rounded-lg font-serif">
               <Link to="blog">Blog</Link>
             </li>
           </ul>
