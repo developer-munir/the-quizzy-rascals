@@ -1,21 +1,27 @@
-import React from "react";
-import swal from 'sweetalert';
+import React, { useState } from "react";
+import swal from "sweetalert";
 import { EyeOffOutline } from "heroicons-react";
-const QuizUi = ({ quiz, setRightCount, setWrongCount, rightCount,wrongCount }) => {
+const QuizUi = ({
+  quiz,
+  setRightCount,
+  setWrongCount,
+  rightCount,
+  wrongCount,
+}) => {
   const { question, correctAnswer, options } = quiz;
   const handleQuiz = (e) => {
     if (e === correctAnswer) {
       swal("Good job!", "You are right!", "success");
       setRightCount(rightCount + 1);
-      
     } else {
       swal("Your are wrong!!!");
       setWrongCount(wrongCount + 1);
-      
     }
+    setHandleDisable(true);
   };
+  const [handleDisable, setHandleDisable] = useState(false);
   const handleRightQuiz = () => {
-    swal("Tap button to see the right answer!!!").then((value) => {
+    swal("Tap button to see the right answer!!!").then(() => {
       swal(`The correct answer is: ${correctAnswer}`);
     });
   };
@@ -26,29 +32,31 @@ const QuizUi = ({ quiz, setRightCount, setWrongCount, rightCount,wrongCount }) =
           <h1 className="md:text-2xl text-lg font-serif mb-2">{question}</h1>
           <p
             onClick={handleRightQuiz}
-            className="cursor-pointer text-[#E6425E]"
+            className="cursor-pointer text-[#CAD5E2]"
           >
             <EyeOffOutline></EyeOffOutline>
           </p>
         </div>
-
-        {options.map((option, index) => (
-          <label
-            key={index}
-            className="flex align-middle p-3 text-xl hover:bg-red-200 hover:text-black rounded-md font-mono cursor-pointer"
-          >
-            <input
-              type="radio"
-              name="quiz"
-              value={option.value}
+        <div>
+          {options.map((option, index) => (
+            <label
               key={index}
-              className="cursor-pointer mr-2 mt-1 radio bg-[#CAD5E2]"
-              defaultChecked={option.value === correctAnswer}
-              onChange={() => handleQuiz(option)}
-            />
-            {option}
-          </label>
-        ))}
+              className="flex align-middle p-3 text-xl hover:bg-red-200 hover:text-black rounded-md font-mono cursor-pointer"
+            >
+              <input
+                type="radio"
+                name="quiz"
+                value={option.value}
+                key={index}
+                disabled={handleDisable}
+                className="cursor-pointer mr-2 mt-1 radio bg-[#CAD5E2]"
+                defaultChecked={option.value === correctAnswer}
+                onChange={() => handleQuiz(option)}
+              />
+              {option}
+            </label>
+          ))}
+        </div>
       </div>
     </div>
   );
